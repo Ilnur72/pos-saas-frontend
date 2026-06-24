@@ -1,9 +1,6 @@
 import { apiClient, superAdminClient } from './client';
 
 export const authApi = {
-  register: (data: { ownerName: string; email: string; password: string; tenantName: string; phone?: string }) =>
-    apiClient.post('/auth/register', data).then((r) => r.data),
-
   login: (data: { email: string; password: string; tenantSlug: string }) =>
     apiClient.post('/auth/login', data).then((r) => r.data),
 

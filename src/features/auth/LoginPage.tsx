@@ -89,11 +89,6 @@ export default function LoginPage() {
           >
             {loading ? 'Kirish...' : 'Kirish'}
           </button>
-
-          <p className="text-center text-sm text-gray-500">
-            Hisobingiz yo'qmi?{' '}
-            <a href="/register" className="text-violet-600 font-semibold hover:underline">Ro'yxatdan o'tish</a>
-          </p>
         </form>
       </div>
     </div>

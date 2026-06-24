@@ -222,7 +222,7 @@ export default function OrdersPage() {
               <h2 className="text-lg font-bold">Yangi buyurtma</h2>
               <button onClick={() => setCreating(false)} className="p-1.5 hover:bg-gray-100 rounded-lg"><X className="h-5 w-5" /></button>
             </div>
-            <div className="space-y-5">
+            <div className="p-6 space-y-5">
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-1.5">Mijoz ismi *</label>

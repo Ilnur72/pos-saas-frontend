@@ -2,7 +2,6 @@ import { createRouter, createRoute, createRootRoute, Outlet, redirect } from '@t
 
 // Pages
 import LoginPage from '@/features/auth/LoginPage';
-import RegisterPage from '@/features/auth/RegisterPage';
 import CrmLayout from '@/features/dashboard/CrmLayout';
 import DashboardPage from '@/features/dashboard/DashboardPage';
 import BillingPage from '@/features/billing/BillingPage';
@@ -45,12 +44,6 @@ const loginRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/login',
   component: LoginPage,
-});
-
-const registerRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/register',
-  component: RegisterPage,
 });
 
 // ─── Super Admin ────────────────────────────────────────────────────────────
@@ -165,7 +158,6 @@ const shopProductRoute = createRoute({ getParentRoute: () => shopLayoutRoute, pa
 
 const routeTree = rootRoute.addChildren([
   loginRoute,
-  registerRoute,
   superAdminLoginRoute,
   superAdminLayoutRoute.addChildren([
     superAdminIndexRoute,
