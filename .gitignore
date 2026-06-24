@@ -1,0 +1,78 @@
+# ─── Dependencies ──────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnp
+.pnp.js
+
+# ─── Build output ──────────────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+*.local
+
+# ─── Env (NEVER commit!) ───────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.*.local
+!.env.example
+
+# ─── Logs ──────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── Editor / IDE ──────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.fleet/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── OS ────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─── Vite cache ────────────────────────────────────────────────────────────
+.vite/
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+# ─── TypeScript ────────────────────────────────────────────────────────────
+*.tsbuildinfo
+.tscache/
+
+# ─── ESLint / Prettier cache ───────────────────────────────────────────────
+.eslintcache
+.prettiercache
+
+# ─── Test / Coverage ───────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+
+# ─── Tauri / Electron (kelajakda kerak bo'lsa) ─────────────────────────────
+src-tauri/target/
+release/
+
+# ─── Misc ──────────────────────────────────────────────────────────────────
+*.tgz
+*.zip
+.cache/
+.parcel-cache/
+.turbo/
