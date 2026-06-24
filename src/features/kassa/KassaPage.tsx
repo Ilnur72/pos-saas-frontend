@@ -7,7 +7,7 @@ import { buildReceipt } from './escpos';
 
 interface Product { id: string; name: string; sku: string; basePrice: number; salePrice: number | null; wholesalePrice?: number | null; wholesaleMinQty?: number; currentStock: number; unit: string; category?: { id: string; name: string } }
 interface CartItem { product: Product; qty: number; unitPrice: number }
-interface Session { id: string; status: string; openedAt: string; openingCash: number; totalSales: number; totalCash: number; totalCard: number; totalQr: number; ordersCount: number }
+interface Session { id: string; status: string; openedAt: string; openingCash: number; totalSales: number; totalCash: number; totalCard: number; totalQr: number; totalExpenses?: number; ordersCount: number; closingCash?: number; expectedCash?: number; difference?: number; notes?: string }
 
 const PAY_METHODS = [
   { key: 'CASH', label: 'Naqd', icon: Banknote, color: 'bg-green-500 hover:bg-green-600' },
